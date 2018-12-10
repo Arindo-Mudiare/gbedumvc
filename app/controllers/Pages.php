@@ -5,10 +5,19 @@
     }
 
     public function index() {
-     $this->view('pages/index');
+      
+
+      $data = [
+        'title' => 'Welcome to GbeduMVC',
+      ];
+     
+     $this->view('pages/index', $data);
     }
 
     public function about() {
-      
+      $data = [
+        'title' => 'About Us'
+      ];
+      $this->view('pages/about', $data);
     }
   }
